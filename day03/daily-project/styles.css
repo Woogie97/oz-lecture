@@ -1,0 +1,52 @@
+      /* 모든 요소에 스타일 적용 */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+/* 폼 모든 p태그 클래스 form-group 스타일 적용 */
+.form-group {
+    margin-bottom: 15px;
+} 
+/* 바디 전체 스타일 적용 */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+/* 폼 태그 아이디 설정 및 스타일 적용 */
+#registration-form {
+max-width: 500px;
+margin: 0 auto;
+}
+/*------------------ 속성 선택자 동시 스타일 적용------------------ */
+[type="text"],[type="email"],[type="password"] {
+  width: 100%;
+  padding: auto;
+  border: 1px solid #ccc;
+}
+
+[type="submit"],[type="reset"] {
+  background-color: #007bff; 
+  color:white; padding: 10px 20px;
+}
+
+
+
+
+
+/* 폼태그 내 모든 P로 스타일 적용 */
+form p{ padding: 5px; }
+
+/* 폼태그 자식 p요소에 스타일 적용 */
+form > p {
+  border-bottom: 1px solid #eee;
+}
+/* 라벨 태그 */
+label {
+  display: inline-block; 
+  width: 100px;
+}
+
+/* <select> */
+select {  
+  width : 100px;
+  border: 1px solid rgb(237, 231, 227);
+}

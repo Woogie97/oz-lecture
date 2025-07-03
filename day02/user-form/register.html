@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Registration Form</title>
+    <style>
+      * {
+        margin: 2px;
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>User Registration</h1>
+      <svg width="100" height="100">
+        <circle
+          cx="50"
+          cy="50"
+          r="40"
+          stroke="black"
+          stroke-width="2"
+          fill="blue"
+        />
+      </svg>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <section>
+      <h2>Registration Form</h2>
+      <form action="submit" method="GET">
+        <div>
+          <label for="user-name">이름</label>
+          <input
+            id="user-name"
+            type="text"
+            name="user-name"
+            placeholder="test"
+            autocomplete="off"
+            value="text"
+          />
+        </div>
+        <div>
+          <label for="user-email">이메일</label>
+          <input id="user-email" type="email" name="user-email" />
+        </div>
+        <div>
+          <label for="user-password">비밀번호</label>
+          <input id="user-password" type="password" name="user-password" />
+        </div>
+        <div>
+          <label for="user-birthdate">생년월일</label>
+          <input id="user-birthdate" type="date" name="user-birthdate" />
+        </div>
+        <div>
+          <label for="user-age">나이</label>
+          <input
+            id="user-age"
+            type="number"
+            name="user-age"
+            min="18"
+            max="100"
+          />
+        </div>
+        <div>
+          <label for="user-age">서비스 만족도</label>
+          <input id="user-age" type="range" name="user-satisfaction" />
+        </div>
+        <div>
+          <p>성별</p>
+          <div>
+            <input
+              type="radio"
+              name="user-gender"
+              value="male"
+              id="user-gender-male"
+            />
+            <label for="user-gender-male">남성</label>
+            <input
+              type="radio"
+              name="user-gender"
+              value="female"
+              id="user-gender-female"
+            />
+            <label for="user-gender-female">여성</label>
+          </div>
+        </div>
+        <div>
+          <p>관심사</p>
+          <div>
+            <input
+              id="user-interests-coding"
+              type="checkbox"
+              name="user-interests"
+              value="Coding"
+            />
+            <label for="user-interests-coding">코딩</label>
+            <input
+              id="user-interests-gaming"
+              type="checkbox"
+              name="user-interests"
+              value="Gaming"
+            />
+            <label for="user-interests-gaming">게임</label>
+            <input
+              id="user-interests-reading"
+              type="checkbox"
+              name="user-interests"
+              value="Reading"
+            />
+            <label for="user-interests-reading">독서</label>
+          </div>
+        </div>
+        <div>
+          <select name="user-nation">
+            <option value="south-korea">South Korea</option>
+            <option value="usa">USA</option>
+            <option value="japan">Japan</option>
+            <option value="china">China</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">제출</button>
+          <button type="reset">초기화</button>
+        </div>
+      </form>
+      <article>
+        <p>Why Register? Registering allows you to access exclusive features</p>
+      </article>
+    </section>
+    <hr />
+    <aside>
+      <article>
+        <h2>Registration Tips</h2>
+        <p>등록 팁입니다.</p>
+      </article>
+      <article>
+        <h2>Contact Support</h2>
+        <p>연락처입니다.</p>
+      </article>
+      <canvas width="400" height="400"></canvas>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" />
+      </video>
+    </aside>
+    <hr />
+    <footer>
+      <div>© 2025 Your Website</div>
+    </footer>
+  </body>
+</html>
