@@ -23,12 +23,14 @@ const Privacy = {
   isStudentOfOz: true,
 };
 
-console.log("Variable my last name is " + hi);
-console.log("My friendly name is " + Wow);
-console.log("저의 한국 이름은 " + Name + " 입니다.");
-console.log(templateString);
+console.log("Var name: " + hi);
+console.log("Let name: " + Wow);
+console.log("저의 한국 이름은 (const) " + Name + " 입니다.");
+console.log("templateString : " + templateString);
 console.log("My habbies : " + myHobbies);
-console.log("Privacy :" + Privacy);
+console.log(
+  ` My name is ${Privacy.name}. age is :${Privacy.age}. Am I Oz's student? It is ${Privacy.isStudentOfOz}. `
+);
 console.log(typeof myHobbies);
 console.log(typeof Privacy);
 
