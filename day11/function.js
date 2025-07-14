@@ -48,7 +48,7 @@ const gugudanExpression = function (num) {
 // 화살표 함수
 const gugudanArrow = (num) => {
   for (let i = 1; i <= 9; i++) {
-    console.log(${num} x ${i} = ${num * i});
+    console.log(`${num} x ${i} = ${num * i}`);
   }
 };
 // gugudanArrow(2);
